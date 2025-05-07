@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.test {
+	height: 900px;
+	width: 600px;
+	background-color: red;
+}
+
+.wrapper-form {
+	width: 440px;
+	background-color: #fff;
+	border: 2px solid rgb(197, 197, 197);
+	border-radius: 6px;
+}
+
+form {
+	padding: 40px;
+	font-size: 20px;
+}
+
+h2 {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.form-box {
+	margin-bottom: 15px;
+}
+
+.form-box-email {
+	margin-bottom: 5px;
+}
+
+.date-hour {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-box input,
+.form-box select {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border: 2px solid #757575;
+	color: rgb(142, 140, 140);
+	border-radius: 5px;
+}
+
+/* .form-box .type-color {
+	color: black;
+} */
+
+/* .form-box .form-box-email .email-color input {
+	color: black;
+} */
+
+.input-color {
+	color: black;
+}
+
+.input-color input {
+	color: black;
+}
+
+.input-color select {
+	color: black;
+}
+
+.email::placeholder {
+	color: rgb(142, 140, 140);
+}
+
+.email .input-color {
+	color: black;
+}
+
+.form-box .date {
+	width: 90%;
+}
+
+.type {
+	margin-top: 2px;
+}
+/* 
+.label {
+	padding-bottom: 5px;
+} */
+
+.error {
+	visibility: hidden;
+	padding-top: 4px;
+	color: rgb(193, 69, 69);
+	font-size: 12px;
+}
+
+.error-visible {
+	visibility: visible;
+}
+
+.note {
+	display: flex;
+	flex-direction: column;
+}
+
+.note-body {
+	max-width: 100%;
+	max-height: 60px;
+	padding: 10px;
+	color: rgb(142, 140, 140);
+	border-radius: 4px;
+	border: 2px solid #757575;
+	border-radius: 4px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+.submit,
+.close {
+	margin: 15px 0;
+	padding: 10px;
+	background-color: rgb(144, 183, 206);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.submit {
+	width: 100%;
+}
+
+.close {
+	width: 40%;
+}
+
+.type {
+	/* color: aqua; */
+}
+
+.submit:hover,
+.close:hover {
+	background-color: rgb(103, 136, 154);
+}
+
+.popup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: -300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 200px;
+	width: 600px;
+	background-color: #fff;
+	border: 2px solid rgb(197, 197, 197);
+	border-radius: 6px;
+	transition: top 0.5s;
+}
+
+.show-popup {
+	top: 50%;
+}
+
